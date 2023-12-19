@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Toggle Image</string>
+    <string name="description_image1">First Image</string>
+    <string name="description_image2">Second Image</string>
+
+</resources>

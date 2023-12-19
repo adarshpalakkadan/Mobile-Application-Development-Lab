@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/editTextValidation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:layout_centerHorizontal="true"
+            android:hint="Enter 'Hello'" />
+
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextValidation"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:text="Submit" />
+
+        <Spinner
+            android:id="@+id/spinnerValidation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:minWidth="48dp"
+            android:layout_below="@id/submitButton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:entries="@array/spinner_items" />
+
+
+        <CheckBox
+            android:id="@+id/checkBoxValidation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Check me"
+            android:layout_below="@id/spinnerValidation"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupValidation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/checkBoxValidation"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical"
+            android:layout_marginTop="40dp">
+
+            <RadioButton
+                android:id="@+id/radioButton1Validation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Option 1" />
+
+            <RadioButton
+                android:id="@+id/radioButton2Validation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Option 2" />
+        </RadioGroup>
+
+        <SeekBar
+            android:id="@+id/seekBarValidation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/radioGroupValidation"
+            android:padding="40dp"
+            android:layout_marginTop="24dp" />
+
+        <ImageView
+            android:id="@+id/imageViewValidation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher_foreground"
+            android:layout_below="@id/seekBarValidation"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp" />
+
+    </RelativeLayout>
+</ScrollView>
